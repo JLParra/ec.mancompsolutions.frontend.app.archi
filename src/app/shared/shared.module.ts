@@ -4,6 +4,7 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PanelDerechaComponent } from './panel-derecha/panel-derecha.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -15,7 +16,8 @@ import { PanelDerechaComponent } from './panel-derecha/panel-derecha.component';
     PanelDerechaComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ],
   exports:[
     HeaderComponent,
