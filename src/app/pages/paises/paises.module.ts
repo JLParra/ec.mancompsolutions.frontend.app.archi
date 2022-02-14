@@ -7,6 +7,8 @@ import { FormCiudadesComponent } from './ciudades/form-ciudades/form-ciudades.co
 import { FormPaisesComponent } from './form-paises/form-paises.component';
 import { FormProvinciasComponent } from './provincias/form-provincias/form-provincias.component';
 import { FormsModule } from '@angular/forms';
+import { InputComponent } from './Components/input/input.component';
+import { TableComponent } from './Components/table/table.component';
 
 
 
@@ -17,7 +19,9 @@ import { FormsModule } from '@angular/forms';
     CiudadesComponent,
     FormCiudadesComponent,
     FormPaisesComponent,
-    FormProvinciasComponent
+    FormProvinciasComponent,
+    TableComponent,
+    InputComponent
 
   ],
   imports: [

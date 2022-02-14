@@ -1,0 +1,36 @@
+<table>
+    <thead>
+        <tr>
+            <th>Cuidad</th>
+            <th>Provincia</th>
+            <th>País</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pais of paises">
+            <td>ciudad</td>
+            <td>Provincia</td>
+            <td>{{pais.nombre}}</td>
+            <td>{{pais.estadoFuncionamiento.nombre}}</td>
+            <td>
+                <tbody>
+                    <tr *ngFor="let pais of paises">
+                        <td class="primary">
+                            <span class="material-icons-sharp">visibility</span>
+                        </td>
+                        <td class="success">
+                            <span class="material-icons-sharp">edit</span>
+                        </td>
+
+                        <td class="danger">
+                            <span class="material-icons-sharp">delete_outline</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<a href="#">Mostrar todos</a>
