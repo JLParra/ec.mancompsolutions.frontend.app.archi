@@ -6,6 +6,7 @@ import { CiudadesComponent } from './ciudades/ciudades.component';
 import { FormCiudadesComponent } from './ciudades/form-ciudades/form-ciudades.component';
 import { FormPaisesComponent } from './form-paises/form-paises.component';
 import { FormProvinciasComponent } from './provincias/form-provincias/form-provincias.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -20,7 +21,8 @@ import { FormProvinciasComponent } from './provincias/form-provincias/form-provi
 
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
   ],
   exports:[
     PaisesComponent,
