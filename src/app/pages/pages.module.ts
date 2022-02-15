@@ -15,7 +15,8 @@ import { EmpresasModule } from './empresas/empresas.module';
   imports: [
     CommonModule,
     PaisesModule,
-    EmpresasModule
+    EmpresasModule,
+
   ], exports: [
     DashboardComponent,
     NopagefoundComponent,

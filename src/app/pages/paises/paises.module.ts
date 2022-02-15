@@ -9,6 +9,7 @@ import { FormProvinciasComponent } from './provincias/form-provincias/form-provi
 import { FormsModule } from '@angular/forms';
 import { InputComponent } from './Components/input/input.component';
 import { TableComponent } from './Components/table/table.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -27,6 +28,7 @@ import { TableComponent } from './Components/table/table.component';
   imports: [
     CommonModule,
     FormsModule,
+    SharedModule
   ],
   exports:[
     PaisesComponent,

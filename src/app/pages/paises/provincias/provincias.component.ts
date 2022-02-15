@@ -15,8 +15,9 @@ export class ProvinciasComponent {
   termino: string = "";
   hayError: boolean = false;
   provincias: Provincia[] = [];
+  
   totalProvincias: Number = 0;
-  totalPais: Number = 0;
+  totalPaises: Number = 0;
   totalCiudades: Number = 0;
   constructor(private provinciaService: ProvinciaService, private paisService: PaisService, private ciudadService: ciudadService) {
     this.contar();
@@ -30,17 +31,16 @@ export class ProvinciasComponent {
       complete: () => { }
     });
     this.paisService.contarPais(1).subscribe({
-      next: (pais) => { console.log(pais); this.totalPais = pais },
-      error: () => { this.totalPais = 0 },
+      next: (pais) => { console.log(pais); this.totalPaises = pais },
+      error: () => { this.totalPaises = 0 },
       complete: () => { }
     });
     this.ciudadService.contarCiudades(1).subscribe({
       next: (ciudad) => { console.log(ciudad); this.totalCiudades = ciudad },
-      error: () => { this.totalCiudades= 0 },
+      error: () => { this.totalCiudades = 0 },
       complete: () => { }
     });
   }
-
 
   buscar(termino: string) {
     this.hayError = false;

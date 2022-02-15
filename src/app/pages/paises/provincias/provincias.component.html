@@ -6,20 +6,7 @@
         <span class="material-icons-sharp">
             public
         </span>
-        <div class="middle">
-            <div class="left">
-                <h3>Pais Creados</h3>
-                <h1>{{totalPais}}</h1>
-            </div>
-            <div class="progress">
-                <svg>
-                    <circle cx='38' cy='38' r='36'></circle>
-                </svg>
-                <div class="number">
-                    <p>81%</p>
-                </div>
-            </div>
-        </div>
+        <app-card titulo="Paises creados" [total]="totalPaises" [cantidad]=81></app-card>
         <small>
             <button type="button"> Crear</button>
         </small>
@@ -29,20 +16,7 @@
         <span class="material-icons-sharp">
             outlined_flag
         </span>
-        <div class="middle">
-            <div class="left">
-                <h3>Provincias creadas</h3>
-                <h1>{{totalProvincias}}</h1>
-            </div>
-            <div class="progress">
-                <svg>
-                    <circle cx='38' cy='38' r='36'></circle>
-                </svg>
-                <div class="number">
-                    <p>62%</p>
-                </div>
-            </div>
-        </div>
+        <app-card titulo="Provincias creadas" [total]=totalProvincias [cantidad]=62></app-card>
         <small>
             <button type="button"> Crear</button>
         </small>
@@ -53,28 +27,12 @@
         <span class="material-icons-sharp">
             outlined_flag
         </span>
-        <div class="middle">
-            <div class="left">
-                <h3>Ciudades</h3>
-                <h1>{{totalCiudades}}</h1>
-            </div>
-            <div class="progress">
-                <svg>
-                    <circle cx='38' cy='38' r='36'></circle>
-                </svg>
-                <div class="number">
-                    <p>44%</p>
-                </div>
-            </div>
-        </div>
+        <app-card titulo="Ciudades creadas" [total]=totalCiudades [cantidad]=44></app-card>
         <small>
             <button type="button"> Crear</button>
         </small>
     </div>
     <!-- END OF INCOME -->
-</div>
-<div *ngIf="hayError" class="alert">
-    No se encontró nada con el término: {{termino}}
 </div>
 <!-- END OF INSIGHTS -->
 <div class="recent-orders">

@@ -6,6 +6,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { PanelDerechaComponent } from './panel-derecha/panel-derecha.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { RouterModule } from '@angular/router';
+import { CardComponent } from './card/card.component';
 
 
 
@@ -14,7 +15,8 @@ import { RouterModule } from '@angular/router';
     BreadcrumbsComponent,
     HeaderComponent,
     SidebarComponent,
-    PanelDerechaComponent
+    PanelDerechaComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { RouterModule } from '@angular/router';
   exports:[
     HeaderComponent,
     SidebarComponent,
-    PanelDerechaComponent
+    PanelDerechaComponent,
+    CardComponent
   ]
 
 })
