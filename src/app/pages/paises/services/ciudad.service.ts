@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Ciudad } from '../interfaces/ciudades.interfaces';
+import { Ciudades } from '../interfaces/ciudades.interfaces';
 
 @Injectable({
   providedIn: 'root'
@@ -11,9 +11,9 @@ export class ciudadService {
 
   constructor(private http: HttpClient) { }
 
-  buscarCiudades(termino: string): Observable<Ciudad[]> {
+  buscarCiudades(termino: string): Observable<Ciudades[]> {
     const url = `${this.apiUrl}/mundo/ciudades/buscarpornombre/${termino}`
-    return this.http.get<Ciudad[]>(url);
+    return this.http.get<Ciudades[]>(url);
   }
 
   contarCiudades(termino: number): Observable<Number> {

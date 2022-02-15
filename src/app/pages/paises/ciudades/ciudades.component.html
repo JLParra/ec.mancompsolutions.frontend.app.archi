@@ -1,1 +1,79 @@
-<p>ciudades works!</p>
+<h1>Ciudades</h1>
+<app-input (onEnter)="buscar( $event )" placeholder="Ingrese la información de la ciudad a buscar"></app-input>
+
+<div class="insights">
+    <div class="sales">
+        <span class="material-icons-sharp">
+            public
+        </span>
+        <app-card titulo="Paises creados" [total]="totalPaises" [cantidad]=81></app-card>
+        <small>
+            <button type="button"> ver más</button>
+        </small>
+    </div>
+    <!-- END OF SALES -->
+    <div class="expenses">
+        <span class="material-icons-sharp">
+            outlined_flag
+        </span>
+        <app-card titulo="Provincias creadas" [total]=totalProvincias [cantidad]=62></app-card>
+        <small>
+            <button type="button"> ver más</button>
+        </small>
+
+    </div>
+    <!-- END OF EXPENSES -->
+    <div class="income">
+        <span class="material-icons-sharp">
+            outlined_flag
+        </span>
+        <app-card titulo="Ciudades creadas" [total]=totalCiudades [cantidad]=44></app-card>
+        <small>
+            <button type="button"> Crear</button>
+        </small>
+    </div>
+    <!-- END OF INCOME -->
+</div>
+<!-- END OF INSIGHTS -->
+<div class="recent-orders">
+    <h2>Cuidades agregadas</h2>
+    <div class="container-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Cuidad</th>
+                    <th>Provincia</th>
+                    <th>País</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let ciudad of ciudades">
+
+                    <td>{{ciudad.nombre}}</td>
+                    <td>{{ciudad.provincia.nombre}}</td>
+                    <td>{{ciudad.provincia.pais.nombre}}</td>
+                    <td>{{ciudad.estadoFuncionamiento.nombre}}</td>
+                    <td>
+                        <tbody>
+                            <tr>
+                                <td class="primary">
+                                    <span class="material-icons-sharp">visibility</span>
+                                </td>
+                                <td class="success">
+                                    <span class="material-icons-sharp">edit</span>
+                                </td>
+
+                                <td class="danger">
+                                    <span class="material-icons-sharp">delete_outline</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="#">Mostrar todos</a>
+    </div>
+</div>

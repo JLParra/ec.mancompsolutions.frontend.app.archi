@@ -1,6 +1,6 @@
 import { Provincia } from "./provincia.interface";
 
-export interface Ciudad {
+export interface Ciudades {
     id: number;
     nombre: string;
     fechaCreacion: Date;
