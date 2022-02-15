@@ -1,10 +1,12 @@
+import { Pais } from "./pais.interface";
 
-export interface Pais {
+export interface Provincia {
     id: number;
     nombre: string;
     fechaCreacion: Date;
-    fechaActualizacion: Date;
+    fechaActualizacion: null;
     capital: string;
+    pais: Pais;
     estadoFuncionamiento: EstadoFuncionamiento;
 }
 
@@ -12,6 +14,6 @@ export interface EstadoFuncionamiento {
     id: number;
     nombre: string;
     fechaCreacion: Date;
-    fechaActualizacion: Date;
+    fechaActualizacion: null;
     descripcion: string;
 }

@@ -1,10 +1,11 @@
+import { Provincia } from "./provincia.interface";
 
-export interface Pais {
+export interface Ciudad {
     id: number;
     nombre: string;
     fechaCreacion: Date;
     fechaActualizacion: Date;
-    capital: string;
+    provincia: Provincia;
     estadoFuncionamiento: EstadoFuncionamiento;
 }
 
@@ -12,6 +13,6 @@ export interface EstadoFuncionamiento {
     id: number;
     nombre: string;
     fechaCreacion: Date;
-    fechaActualizacion: Date;
+    fechaActualizacion: null;
     descripcion: string;
 }

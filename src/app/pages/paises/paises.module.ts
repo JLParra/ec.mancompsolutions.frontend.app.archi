@@ -31,7 +31,8 @@ import { TableComponent } from './Components/table/table.component';
   exports:[
     PaisesComponent,
     ProvinciasComponent,
-    CiudadesComponent
+    CiudadesComponent,
+    TableComponent,
   ]
 })
 export class PaisesModule { }
