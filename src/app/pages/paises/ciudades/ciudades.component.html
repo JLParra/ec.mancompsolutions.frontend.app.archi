@@ -8,7 +8,7 @@
         </span>
         <app-card titulo="Paises creados" [total]="totalPaises" [cantidad]=81></app-card>
         <small>
-            <button type="button"> ver más</button>
+            <a class="button" [routerLink]="['/mundo/paises' ]">Ver más</a>
         </small>
     </div>
     <!-- END OF SALES -->
@@ -18,7 +18,7 @@
         </span>
         <app-card titulo="Provincias creadas" [total]=totalProvincias [cantidad]=62></app-card>
         <small>
-            <button type="button"> ver más</button>
+            <a class="button" [routerLink]="['/mundo/provincias' ]">Ver más</a>
         </small>
 
     </div>
@@ -29,7 +29,7 @@
         </span>
         <app-card titulo="Ciudades creadas" [total]=totalCiudades [cantidad]=44></app-card>
         <small>
-            <button type="button"> Crear</button>
+            <a class="button" [routerLink]="['/mundo/ciudades' ]">Agregar</a>
         </small>
     </div>
     <!-- END OF INCOME -->

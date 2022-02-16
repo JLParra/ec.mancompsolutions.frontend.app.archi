@@ -12,6 +12,7 @@ const routes: Routes =[
     children:[
       {
         path: 'paises',
+        pathMatch: "full",
         component:PaisesComponent
       }, {
         path: 'provincias',

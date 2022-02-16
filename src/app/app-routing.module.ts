@@ -14,7 +14,8 @@ const routes: Routes = [
   },
   {
     path: 'auth',
-    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule),
+    pathMatch: "full"
   },
 
   {
@@ -22,7 +23,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/paises/paises.module').then(m => m.PaisesModule)
 
   },
-  { path: 'empresas', component: EmpresasComponent },
+  { path: 'empresas', component: EmpresasComponent, pathMatch: "full" },
 
   { path: '**', redirectTo: '' },
 ];
