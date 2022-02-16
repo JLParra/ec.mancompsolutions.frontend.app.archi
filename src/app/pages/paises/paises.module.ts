@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { InputComponent } from './Components/input/input.component';
 import { TableComponent } from './Components/table/table.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { PaisesRoutingModule } from './paises-routing.module';
 
 
 
@@ -27,14 +28,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
   ],
   imports: [
     CommonModule,
+    PaisesRoutingModule,
     FormsModule,
     SharedModule
   ],
-  exports:[
-    PaisesComponent,
-    ProvinciasComponent,
-    CiudadesComponent,
-    TableComponent,
-  ]
 })
 export class PaisesModule { }

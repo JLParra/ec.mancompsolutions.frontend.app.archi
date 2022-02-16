@@ -30,8 +30,7 @@
                             "src/styles.css"
                         ],
                         "scripts": [
-                            "src/assets/js/index.js",
-                            "src/assets/js/orders.js"
+
                         ]
                     },
                     "configurations": {
